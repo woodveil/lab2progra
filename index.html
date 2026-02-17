@@ -1,46 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Ejemplo de eventos en JavaScript</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Gilla de Eventos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Ejemplo de eventos en JavaScript</h1>
-  
-  <div class="contenedor">
-    <div class="caja azul" id="cajaClick">Haz clic (click)</div>
-    <div class="caja amarillo" id="cajaHover">Pasa el mouse (mouseenter)</div>
-    <div class="caja naranja" id="cajaDobleClick">Doble clic (dblclick)</div>
-    <div class="caja verde" id="cajaTecla">
-      Escribe aquí (keydown)<br>
-      <input type="text" id="inputTecla">
-    </div>
-    <div class="caja azul" id="cajaFocus">
-      Enfoca aquí (focus)<br>
-      <input type="text" id="inputFocus">
-    </div>
-    <div class="caja rojo" id="cajaBlur">
-      Salir del campo (blur)<br>
-      <input type="text" id="inputBlur">
-    </div>
-    <div class="caja morado" id="cajaFormulario">
-      Enviar formulario (submit)<br>
-      <form id="formulario">
-        <input type="text" placeholder="Escribe algo">
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-    <div class="caja rosa" id="cajaCambio">
-      Cambiar valor (change)<br>
-      <select id="selectCambio">
-        <option value="">Selecciona</option>
-        <option value="op1">Opción 1</option>
-        <option value="op2">Opción 2</option>
-      </select>
-    </div>
-  </div>
 
-  <script src="eventos.js"></script>
+    <div class="grid-container">
+        <div id="click-box" class="card c1">EVENTO AQUÍ <br> <span>Click</span></div>
+        <div id="hover-box" class="card c2">EVENTO AQUÍ <br> <span>Hover (Mouse over)</span></div>
+        <div id="dblclick-box" class="card c3">EVENTO AQUÍ <br> <span>Double Click</span></div>
+        <div id="keydown-box" class="card c4">EVENTO AQUÍ <br> <span>Presiona una tecla</span></div>
+        <div id="context-box" class="card c5">EVENTO AQUÍ <br> <span>Click Derecho</span></div>
+        <div id="scroll-box" class="card c6">EVENTO AQUÍ <br> <span>Rueda del Mouse</span></div>
+        <div id="mouse-leave" class="card c7">EVENTO AQUÍ <br> <span>Saca el mouse</span></div>
+        <div id="change-box" class="card c8">
+            EVENTO AQUÍ <br> 
+            <input type="text" id="input-change" placeholder="Escribe y sal">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
