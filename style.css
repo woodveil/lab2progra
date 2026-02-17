@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fafafa;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 80%;
+  margin: auto;
+}
+
+.caja {
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  min-height: 80px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.azul { background: #a7c7e7; }      
+.amarillo { background: #fff9b1; }  
+.naranja { background: #f7c59f; }   
+.verde { background: #b8e0d2; }     
+.rojo { background: #f7a7a3; }      
+.morado { background: #d7bce8; }    
+.rosa { background: #f9c6d0; }      
+
+input, select, button {
+  margin-top: 10px;
+  padding: 5px;
+}
